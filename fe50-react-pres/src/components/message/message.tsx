@@ -5,6 +5,6 @@ interface IProps {
   children?: string;
   type?: "warning" | "success" | "error" | "info";
 }
-export const Msg = ({ children, type }: IProps) => {
+export const Message = ({ children, type }: IProps) => {
   return <MessageStyled type={type}> {children} </MessageStyled>;
 };

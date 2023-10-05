@@ -10,7 +10,8 @@ export const ButtonStyled = styled.button<{
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
-  cursor: ${({ disabled }) => (disabled === "disabled" ? "none" : "pointer")};
+  cursor: ${({ disabled }) =>
+    disabled === "disabled" ? "not-allowed" : "pointer"};
   padding: ${({ size }) =>
     size === "small"
       ? "14px 21px"

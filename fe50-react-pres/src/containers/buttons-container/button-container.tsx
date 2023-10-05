@@ -1,11 +1,13 @@
 import React from "react";
-import { Button } from "../../components/button/button.tsx";
-import { ButtonsMainContainer } from "./button-container-styled.tsx";
-import { ButtonsSmallContainer } from "./buttons-small-container.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "../../components/button/button.tsx";
+import { ButtonsMainContainer } from "./button-container-styled.tsx";
+import { ButtonsSmallContainer } from "./buttons-small-container.tsx";
+
 library.add(faPen);
+
 export const ButtonsContainer = () => {
   return (
     <ButtonsMainContainer>

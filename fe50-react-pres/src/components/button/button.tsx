@@ -3,7 +3,7 @@ import { ButtonStyled } from "./button-styled.tsx";
 
 interface IProps {
   className?: string;
-  bcolor: string;
+  $bcolor: string;
   size?: "small" | "normal" | "medium";
   children: ReactNode;
   type?: "button" | "submit" | "reset";
@@ -14,7 +14,7 @@ interface IProps {
 
 export const Button = ({
   className,
-  bcolor,
+  $bcolor,
   size,
   children,
   type = "button",
@@ -26,7 +26,7 @@ export const Button = ({
     <ButtonStyled
       className={className}
       type={type}
-      bcolor={bcolor}
+      $bcolor={$bcolor}
       size={size}
       disabled={disabled}
       outline={outline}

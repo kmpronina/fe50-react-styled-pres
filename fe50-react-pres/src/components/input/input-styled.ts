@@ -16,7 +16,7 @@ export const InputStyled = styled.input<{ status }>`
   }
   &:hover {
     background-color: rgba(17, 106, 204, 0.1);
-    border: 2px solid #116acc;
+    outline: 2px solid #116acc;
   }
   &::placeholder {
     color: ${({ status }) => (status === "disabled" ? "#9CA3AF" : "#6B7280")};
